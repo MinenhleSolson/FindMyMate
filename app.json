@@ -10,6 +10,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "platforms": [
+      "android",
+      "ios"
+   ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -19,8 +23,12 @@
     "ios": {
       "supportsTablet": true
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCwshdKAkdpHiKinxNKomu9C2ou0O1Iy6A"
+        }
   }
 }
+}
+} 
