@@ -6,13 +6,14 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import MapScreen from './src/screens/MapScreen';
 import MapListScreen from './src/screens/MapListScreen';
 import { setNavigator } from './src/screens/navigationRef';
-import UserToMeet from './src/components/UserToMeet'
+import UserToMeet from './src/components/UserToMeet';
 
 const switchNavigator = createBottomTabNavigator({
   FindMyMate: createBottomTabNavigator({
     UserLocations: MapScreen,
     Users: MapListScreen,
     UserAmMeeting: UserToMeet
+    
   })
 })
 
@@ -22,8 +23,9 @@ export default () => {
   return (
     <App  
     ref={navigator => {
-      setNavigator(navigator)
-    }}
+      setNavigator(navigator);
+    }
+         
     />
   );    
 }
